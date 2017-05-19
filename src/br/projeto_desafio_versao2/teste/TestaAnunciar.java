@@ -13,7 +13,7 @@ import br.projeto_desafio_versao2.util.JPAUtil;
 public class TestaAnunciar {
 	public static void main(String[] args) {
 		Anuncia anuncio = new Anuncia();
-		anuncio.setValoraluguelhora(13);
+		anuncio.setValoraluguelhora(30);
 		anuncio.setData(Calendar.getInstance());
 		
 		Usuario usr1 = new Usuario();

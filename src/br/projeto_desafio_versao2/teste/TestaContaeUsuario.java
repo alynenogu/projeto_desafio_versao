@@ -10,9 +10,9 @@ public class TestaContaeUsuario {
 
 	public static void main(String[] args) {
 		Usuario usuario1 = new Usuario();
-		usuario1.setNome("Alyne");
-		usuario1.setProfissao("Estudante");
-		usuario1.setLogin("line");
+		usuario1.setNome("Joao");
+		usuario1.setProfissao("Faz nada");
+		usuario1.setLogin("jojo");
 		usuario1.setSenha("123");
 		usuario1.setEndereco("Rua margarida");
 		usuario1.setTelefone(2124129090);
@@ -20,7 +20,7 @@ public class TestaContaeUsuario {
 		usuario1.setQtdalugados(1);
 		
 		Ccorrente conta1 = new Ccorrente();
-		conta1.setSaldo(222);
+		conta1.setSaldo(5000);
 		conta1.setLimite(20000);
 		
 		usuario1.setCcorrente(conta1);
