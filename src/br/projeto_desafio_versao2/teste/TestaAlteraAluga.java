@@ -7,11 +7,11 @@ import br.projeto_desafio_versao2.modelo.Produto;
 import br.projeto_desafio_versao2.modelo.Usuario;
 import br.projeto_desafio_versao2.util.JPAUtil;
 
-public class TestaAluga {
-
+public class TestaAlteraAluga {
 	public static void main(String[] args) {
 		Aluga alg = new Aluga();
-		alg.setValordevedor(9999.3);
+		alg.setId(1);
+		alg.setValordevedor(204.3);
 		alg.setQtdhorasalugadas(6);
 		
 		Usuario usr1 = new Usuario();
@@ -24,10 +24,11 @@ public class TestaAluga {
 		
 		EntityManager em = new JPAUtil().getEntityManager();
 		em.getTransaction().begin();
-		em.persist(alg);
+		em.merge(alg);
 		em.getTransaction().commit();
 		em.close();
 		
+
 	}
 
 }
