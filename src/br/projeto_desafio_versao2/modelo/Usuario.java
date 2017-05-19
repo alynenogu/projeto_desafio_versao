@@ -21,6 +21,9 @@ public class Usuario {
 	@OneToOne
 	private Ccorrente ccorrente;
 	
+	private int qtdanuncios;
+	private int qtdalugados;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -63,5 +66,26 @@ public class Usuario {
 	public void setTelefone(int telefone) {
 		this.telefone = telefone;
 	}
+	//Metodos verifica a qtd produtos anunciados
+	public boolean verificaQtdAnuncios(int qtdanuncios){
+		//Se a qtd for maior que 2, nao pode mais anunciar
+		if(this.qtdanuncios > 2){
+			
+			return false;
+		}else{
+			return true;
+		}
+	}
+	//Metodos verifica a qtd produtos alugados
+		public boolean verificaQtdalugado(int qtdalugados){
+			//Se a qtd for maior que 2, nao pode mais alugar
+			if(this.qtdalugados > 2){
+				
+				return false;
+			}else{
+				return true;
+			}
+		}
+		
 	
 }

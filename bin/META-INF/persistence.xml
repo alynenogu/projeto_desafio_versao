@@ -10,6 +10,9 @@
         <class>br.projeto_desafio_versao2.modelo.Categoria</class>
 		 <class>br.projeto_desafio_versao2.modelo.Produto</class>
 		 <class>br.projeto_desafio_versao2.modelo.Usuario</class>
+		 <class>br.projeto_desafio_versao2.modelo.Ccorrente</class>
+		 <class>br.projeto_desafio_versao2.modelo.Aluga</class>
+		 <class>br.projeto_desafio_versao2.modelo.Anuncia</class>
 		 
         <properties>    
             <!-- Propriedades JDBC -->
