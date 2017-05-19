@@ -10,10 +10,10 @@ public class TestaContaeUsuario {
 
 	public static void main(String[] args) {
 		Usuario usuario1 = new Usuario();
-		usuario1.setNome("Lourdes");
-		usuario1.setProfissao("Dona de Casa");
-		usuario1.setLogin("mamae");
-		usuario1.setSenha("mamae");
+		usuario1.setNome("Alyne");
+		usuario1.setProfissao("Estudante");
+		usuario1.setLogin("line");
+		usuario1.setSenha("123");
 		usuario1.setEndereco("Rua margarida");
 		usuario1.setTelefone(2124129090);
 		usuario1.setQtdanuncios(1);
