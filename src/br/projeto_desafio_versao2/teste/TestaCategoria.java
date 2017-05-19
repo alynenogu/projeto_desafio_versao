@@ -31,10 +31,13 @@ public class TestaCategoria {
 		EntityManager em = new JPAUtil().getEntityManager();
 		
 		em.getTransaction().begin();
+		
+		ctg3 = em.find(Categoria.class, 5);
 		em.persist(ctg);
 		em.persist(ctg1);
 		em.persist(ctg2);
-		em.persist(ctg3);
+		//remove
+		em.remove(ctg3);
 		em.getTransaction().commit();
 		
 		em.close();
