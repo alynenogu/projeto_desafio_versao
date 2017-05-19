@@ -20,9 +20,11 @@ public class Produto {
 	private String nome;
 	@Enumerated(EnumType.STRING)
 	private StatusAlugado statusalugar;
+	@Enumerated(EnumType.STRING)
+	private StatusAnunciado statusanunciado;
 	private String descricao;
-	@Temporal(TemporalType.DATE)
-	private Calendar data;
+	
+	@ManyToOne
 	private Categoria categoria;
 	
 	@ManyToOne
@@ -60,13 +62,7 @@ public class Produto {
 		this.descricao = descricao;
 	}
 
-	public Calendar getData() {
-		return data;
-	}
 
-	public void setData(Calendar data) {
-		this.data = data;
-	}
 
 	public Categoria getCategoria() {
 		return categoria;
@@ -82,6 +78,14 @@ public class Produto {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
+	}
+
+	public StatusAnunciado getStatusanunciado() {
+		return statusanunciado;
+	}
+
+	public void setStatusanunciado(StatusAnunciado statusanunciado) {
+		this.statusanunciado = statusanunciado;
 	}
 	
 	

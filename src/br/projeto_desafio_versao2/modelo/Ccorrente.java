@@ -1,26 +1,26 @@
 package br.projeto_desafio_versao2.modelo;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Ccorrente {
-	int codContaCorrente;
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	int id;
 	double saldo;
 	int limite;
 	
-	/*metodos construtores*/
-	public Ccorrente(){
-		
-	}
-	public Ccorrente(int codContaCorrente, double saldo, int limite){
-		this.codContaCorrente = codContaCorrente;
-		this.saldo = saldo;
-		this.limite = limite;
-	}
+	
 	/*metodos set e get*/
 	//int codcontacorrente
-	public void setCodContaCorrente(int codContaCorrente) {
-		this.codContaCorrente = codContaCorrente;
+	public void setCodContaCorrente(int id) {
+		this.id = id;
 	}
 	public int getCodContaCorrente() {
-		return this.codContaCorrente;
+		return this.id;
 	}
 	//int saldo
 	public void setSaldo(double saldo) {
@@ -39,13 +39,6 @@ public class Ccorrente {
 	}
 	
 	
-	/* métodos para conta corrente*/
-	
-	public void cadastra(int codContaCorrente, int saldo, int limite){
-		this.codContaCorrente = codContaCorrente;
-		this.saldo = saldo;
-		this.limite = limite;
-	}
 	
 	//sacar
 	

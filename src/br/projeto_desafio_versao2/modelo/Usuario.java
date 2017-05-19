@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 
@@ -18,6 +19,7 @@ public class Usuario {
 	private String senha;
 	private String endereco;
 	private int telefone;
+	@JoinColumn(unique=true)
 	@OneToOne
 	private Ccorrente ccorrente;
 	
@@ -66,6 +68,25 @@ public class Usuario {
 	public void setTelefone(int telefone) {
 		this.telefone = telefone;
 	}
+	public Ccorrente getCcorrente() {
+		return ccorrente;
+	}
+	public void setCcorrente(Ccorrente ccorrente) {
+		this.ccorrente = ccorrente;
+	}
+	public int getQtdanuncios() {
+		return qtdanuncios;
+	}
+	public void setQtdanuncios(int qtdanuncios) {
+		this.qtdanuncios = qtdanuncios;
+	}
+	public int getQtdalugados() {
+		return qtdalugados;
+	}
+	public void setQtdalugados(int qtdalugados) {
+		this.qtdalugados = qtdalugados;
+	}
+	
 	//Metodos verifica a qtd produtos anunciados
 	public boolean verificaQtdAnuncios(int qtdanuncios){
 		//Se a qtd for maior que 2, nao pode mais anunciar

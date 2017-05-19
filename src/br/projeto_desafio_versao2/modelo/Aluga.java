@@ -1,9 +1,15 @@
 package br.projeto_desafio_versao2.modelo;
 
+import java.util.Calendar;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Aluga {
@@ -12,8 +18,12 @@ public class Aluga {
 		private Integer id;
 		private double valordevedor;
 		private double qtdhorasalugadas;
+		@ManyToOne
 		private Usuario usuario;
+		@ManyToOne
 		private Produto produto;
+		@Temporal(TemporalType.TIMESTAMP)
+		private Calendar data;
 		
 		public Integer getId() {
 			return id;
