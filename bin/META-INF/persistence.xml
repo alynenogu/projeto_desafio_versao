@@ -8,7 +8,9 @@
 
         <!-- Aqui são listadas todas as entidades -->
         <class>br.projeto_desafio_versao2.modelo.Categoria</class>
-
+		 <class>br.projeto_desafio_versao2.modelo.Produto</class>
+		 <class>br.projeto_desafio_versao2.modelo.Usuario</class>
+		 
         <properties>    
             <!-- Propriedades JDBC -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
