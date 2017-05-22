@@ -55,5 +55,11 @@ public class Aluga {
 		public void setProduto(Produto produto) {
 			this.produto = produto;
 		}
+		public Calendar getData() {
+			return data;
+		}
+		public void setData(Calendar data) {
+			this.data = data;
+		}
 		
 }

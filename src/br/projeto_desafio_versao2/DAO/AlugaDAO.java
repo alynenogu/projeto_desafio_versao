@@ -52,7 +52,7 @@ public class AlugaDAO {
 			em.getTransaction().commit();
 			em.close();
 	    }
-	 public List<Aluga> CcorrenteListar(){
+	 public List<Aluga> AlugaListar(){
 		 Query query = em.createQuery("select al from Aluga al");
 		 
 		return query.getResultList();
