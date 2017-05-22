@@ -5,7 +5,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import br.projeto_desafio_versao2.modelo.Aluga;
+
 import br.projeto_desafio_versao2.modelo.Produto;
 
 public class ProdutoDAO {
@@ -52,7 +52,7 @@ public class ProdutoDAO {
 			em.close();
 	    }
 	 public List<Produto> ProdutoListar(){
-		 Query query = em.createQuery("select pr from Produto pr");
+		 Query query = em.createQuery("select p from Produto p");
 		 
 		return query.getResultList();
 		 
