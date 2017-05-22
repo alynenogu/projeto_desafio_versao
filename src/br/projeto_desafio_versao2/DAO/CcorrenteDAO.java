@@ -24,10 +24,10 @@ public class CcorrenteDAO {
             
     }
 	
-	 public void CcorrenteAlterar(Ccorrente cc) throws Exception
+	 public void CcorrenteAlterar(Ccorrente ccDAO) throws Exception
 	    {
 		 	em.getTransaction().begin();
-			em.merge(cc);
+			em.merge(ccDAO);
 			em.getTransaction().commit();
 			em.close();
 	    }
