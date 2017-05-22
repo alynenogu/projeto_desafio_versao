@@ -5,7 +5,9 @@ import java.util.List;
 import javax.persistence.EntityManager;
 
 import br.projeto_desafio_versao2.DAO.CategoriaDAO;
+import br.projeto_desafio_versao2.DAO.UsuarioDAO;
 import br.projeto_desafio_versao2.modelo.Categoria;
+import br.projeto_desafio_versao2.modelo.Usuario;
 import br.projeto_desafio_versao2.util.JPAUtil;
 
 public class TestaCategoriaDAOListar {
